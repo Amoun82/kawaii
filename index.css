@@ -1,0 +1,370 @@
+body
+{
+    background-color: violet;
+}
+
+
+/* dans toutes les pages */
+h1,h2
+{
+    color: pink;
+    text-align: center;
+    border-radius: 80px;
+    border: 3px double purple ;
+}
+
+h1:hover,h2:hover
+{
+    color: mediumvioletred;
+    background-color: mediumorchid;
+}
+
+h3:hover
+{
+    background-color: salmon;
+    color: silver;
+}
+
+a
+{
+    text-decoration: none;    
+}
+
+
+/* entete */
+header
+{
+    padding: 25px 0;
+    background-color:lightcoral;
+}
+
+header li:hover
+{
+    background-color: darkmagenta;
+}
+
+header a:hover
+{
+    color: red ;
+}
+
+nav
+{
+    padding-top: 20px;
+}
+
+ul
+{
+    display: flex;
+    margin-right: 20px;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+li
+{
+    margin: 0 20px;
+    padding: 0 20px;
+    border-radius: 80px;
+    border: 3px double purple ;
+}
+
+
+/* tentative dessin du coeur */
+.imageCoeur
+{
+    height: 40px;
+    width: 40px;
+}
+
+figcaption
+{
+    display: none;
+}
+
+.coeur
+{
+    text-align: center;
+    border: 3px double purple ;
+    border-radius: 80px;
+    height: 80px;
+}
+
+.coeur:hover
+{
+    background-color:tomato;
+}
+
+.conteneur
+{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+
+#coeur1
+{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#coeur2
+{
+    grid-column: 8 ;
+    grid-row: 2;
+}
+
+#coeur3
+{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#coeur4
+{
+    grid-column: 5;
+    grid-row: 3;
+}
+
+#coeur5
+{
+    grid-column: 7;
+    grid-row: 3;
+}
+
+#coeur6
+{
+    grid-column: 9;
+    grid-row: 3;
+}
+
+#coeur7
+{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#coeur8
+{
+    grid-column: 6;
+    grid-row: 4;
+}
+
+#coeur9
+{
+    grid-column: 10;
+    grid-row: 4;
+}
+
+#coeur10
+{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+#coeur11
+{
+    grid-column: 9;
+    grid-row: 5;
+}
+
+#coeur12
+{
+    grid-column: 4;
+    grid-row: 6;
+}
+
+#coeur13
+{
+    grid-column: 8;
+    grid-row: 6;
+}
+
+#coeur14
+{
+    grid-column: 5;
+    grid-row: 7;
+}
+
+#coeur15
+{
+    grid-column: 7;
+    grid-row: 7;
+}
+
+#coeur16
+{
+    grid-column: 6;
+    grid-row: 8;
+}
+
+
+/* contenu principale de la page accueil */
+#conteneur1
+{
+    border: 3px double purple ;
+    display: grid;
+    
+    padding: 10px;
+}
+
+article
+{
+    margin: 20px 0 ;
+}
+
+#article1
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#figure1
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#figure2
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#article2
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#article3
+{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+section article h3:hover
+{
+    color: gold;
+}
+
+article:hover
+{
+    
+    background-image: url("https://image.shutterstock.com/image-vector/cute-couple-hearts-love-valentine-260nw-1562332270.jpg") ;
+    background-position: cover;
+    color:darkmagenta ;
+    text-align: justify;
+}
+
+
+/* page a propos */
+.aProposConteneur
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+#aProposCoeur1
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#aProposCoeur2
+{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+#aProposCoeur3
+{
+    grid-column: 6 ;
+    grid-row: 2 ;
+}
+
+#aProposCoeur4
+{
+    grid-column: 6;
+    grid-row: 6;
+}
+
+#aProposCoeur5
+{
+    grid-column: 3/6 ;
+    grid-row: 3/6;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+
+#aProposCoeur5:hover
+{
+    background-color: tomato;
+}
+
+.aProposCoeur
+{
+    border: 3px double purple ;
+    border-radius: 80px;
+}
+
+.aProposCoeur:hover
+{
+    background-color:tomato;
+}
+
+#photoChefDeProjet
+{
+    width: 50%;
+    height: 100px;
+}
+
+/* page contact */
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:brown;
+    padding: 10px;
+}
+
+#commentaire
+{
+    width: 50%;
+    height: 200px;
+}
+
+/* page service */
+video
+{
+    width: 50%;
+    margin: 20px auto;
+}
+
+iframe
+{
+    margin: 20px 0 ;
+}
+
+/* pied de page */
+footer
+{
+    margin-top: 20px;
+    text-align: center;
+    background-color:lightcoral;
+    padding: 40px 0 ;
+}
+
+footer a,footer p
+{
+    display: inline;
+    padding: 0 50px;
+}
+
+footer a:hover
+{
+    color: red;
+}
